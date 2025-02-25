@@ -20,12 +20,11 @@ body {
 }
 
 body h1 {
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 26pt;
 }
 
 body p {
-    font-size: 20px;
+    font-size: 20pt;
 }
 
 header {
@@ -71,6 +70,14 @@ main {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+main h1 {
+    font-size: 26pt;
+}
+
+main p {
+    font-size: 20pt;
 }
 
 footer {
