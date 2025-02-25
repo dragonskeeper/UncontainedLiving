@@ -64,6 +64,16 @@ main {
     margin: 0 auto;
 }
 
+h1 {
+    font-family: Garamond, serif;
+    font-size: 18pt;
+}
+
+p {
+    font-family: Garamond, serif;
+    font-size: 14pt;
+}
+
 footer {
     background-color: var(--black);
     padding: 1rem;
