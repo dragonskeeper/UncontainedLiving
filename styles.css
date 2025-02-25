@@ -10,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Garamond, serif;
-    font-size: 14pt;
+    font-size: 10pt;
 }
 
 body {
@@ -20,12 +20,12 @@ body {
 }
 
 body h1 {
-    font-size: 18pt;
+    font-size: 26pt;
     font-weight: bold;
 }
 
 body p {
-    font-size: 14pt;
+    font-size: 20pt;
     font-weight: bold;
 }
 
