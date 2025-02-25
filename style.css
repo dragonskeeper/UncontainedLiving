@@ -1,0 +1,92 @@
+:root {
+    --purple: #800080;
+    --black: #000000;
+    --gold: #FFD700;
+    --red: #FF0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Garamond, serif;
+    font-size: 12pt;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--black);
+    padding: 1rem;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-btn {
+    color: var(--purple);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: var(--purple);
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--black);
+    padding: 1rem;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-btn {
+    color: var(--purple);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: var(--red);
+    color: white;
+}
