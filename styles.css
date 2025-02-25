@@ -19,14 +19,12 @@ body {
     flex-direction: column;
 }
 
-.h1 {
-    color: var(--black);
+h1 {
     font-size: 18pt;
     font-weight: bold;
 }
 
-.p {
-    color: var(--black);
+p {
     font-size: 14pt;
     font-weight: bold;
 }
@@ -74,6 +72,16 @@ main {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14pt;
+    font-weight: bold;
 }
 
 footer {
