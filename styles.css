@@ -11,20 +11,28 @@
     box-sizing: border-box;
     font-family: Garamond, serif;
     font-size: 10pt;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 body h1 {
     font-size: 26pt;
+    align-content: center;
+    align-text: justify;
 }
 
 body p {
-    font-size: 20pt;
+    font-size: 16pt;
+    align-content: center;
+    align-text: justify;
 }
 
 header {
@@ -70,15 +78,6 @@ main {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-main h1 {
-    font-size: 26pt;
-}
-
-main p {
-    font-size: 20pt;
-}
 
 footer {
     background-color: var(--black);
