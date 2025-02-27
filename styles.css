@@ -17,6 +17,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 body h1 {
@@ -107,4 +109,13 @@ footer {
 .nav-btn:hover {
     background-color: var(--purple);
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+    .nav-btn {
+        font-size: 14pt;
+    }
 }
