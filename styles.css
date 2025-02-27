@@ -76,7 +76,7 @@ footer {
     padding: 1rem;
 }
 
-.footer-buttons {
+.nav-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,12 @@ footer {
     font-weight: bold;
 }
 
-.footer-btn {
+.nav-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-btn {
     color: var(--purple);
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -99,7 +104,7 @@ footer {
     transition: all 0.3s ease;
 }
 
-.footer-btn:hover {
+.nav-btn:hover {
     background-color: var(--purple);
     color: white;
 }
