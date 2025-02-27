@@ -73,12 +73,3 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-@media only screen and (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-    .nav-btn {
-        font-size: 14pt;
-    }
-}
