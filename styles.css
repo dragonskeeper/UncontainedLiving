@@ -1,3 +1,4 @@
+<style>
 body {
   font-family: sans-serif;
   margin: 0;
@@ -13,8 +14,8 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: white;
+  background-color: #9D21D2;
+  color: purple;
   padding: 10px 0;
 }
 
@@ -52,3 +53,4 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+</style>
