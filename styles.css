@@ -8,7 +8,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
-  overflow: hidden; /* prevents content from overflowing */
+  overflow: true; /* prevents content from overflowing */
   padding: 20px;
 }
 
