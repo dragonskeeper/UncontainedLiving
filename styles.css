@@ -15,7 +15,7 @@ body {
 
 header {
   background-color: #9D21D2;
-  color: purple;
+  color: black;
   padding: 10px 0;
 }
 
@@ -42,13 +42,13 @@ nav a {
 }
 
 .service-card {
-  background-color: #ddd;
+  background-color: #9D21D2;
   padding: 15px;
   border-radius: 5px;
 }
 
 footer {
-  background-color: #333;
+  background-color: #9D21D2;
   color: white;
   text-align: center;
   padding: 10px 0;
