@@ -1,159 +1,360 @@
-<!DOCTYPE html>
+<!DOCTYPE_html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uncontained Living</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Uncontained Living Debt Union</title>
+    #<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Mono:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Space Mono', monospace;
+            background-color: #111;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+        
+        .title-font {
+            font-family: 'Rubik Mono One', sans-serif;
+        }
+        
+        .glitch {
+            position: relative;
+        }
+        
+        .glitch::before, .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 #ff00ff;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+        
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 #00ffff;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim2 5s infinite linear alternate-reverse;
+        }
+        
+        @keyframes glitch-anim {
+            0% { clip: rect(31px, 9999px, 94px, 0); }
+            10% { clip: rect(112px, 9999px, 76px, 0); }
+            20% { clip: rect(85px, 9999px, 77px, 0); }
+            30% { clip: rect(27px, 9999px, 97px, 0); }
+            40% { clip: rect(64px, 9999px, 98px, 0); }
+            50% { clip: rect(61px, 9999px, 85px, 0); }
+            60% { clip: rect(99px, 9999px, 114px, 0); }
+            70% { clip: rect(34px, 9999px, 115px, 0); }
+            80% { clip: rect(98px, 9999px, 129px, 0); }
+            90% { clip: rect(43px, 9999px, 96px, 0); }
+            100% { clip: rect(82px, 9999px, 64px, 0); }
+        }
+        
+        @keyframes glitch-anim2 {
+            0% { clip: rect(65px, 9999px, 119px, 0); }
+            10% { clip: rect(144px, 9999px, 41px, 0); }
+            20% { clip: rect(6px, 9999px, 140px, 0); }
+            30% { clip: rect(10px, 9999px, 105px, 0); }
+            40% { clip: rect(2px, 9999px, 83px, 0); }
+            50% { clip: rect(149px, 9999px, 134px, 0); }
+            60% { clip: rect(59px, 9999px, 72px, 0); }
+            70% { clip: rect(131px, 9999px, 103px, 0); }
+            80% { clip: rect(114px, 9999px, 140px, 0); }
+            90% { clip: rect(15px, 9999px, 19px, 0); }
+            100% { clip: rect(130px, 9999px, 53px, 0); }
+        }
+        
+        .debt-meter {
+            height: 20px;
+            background: linear-gradient(90deg, #4b0082, #ff0000);
+            animation: debt-grow 3s infinite alternate;
+        }
+        
+        @keyframes debt-grow {
+            0% { width: 10%; }
+            100% { width: 100%; }
+        }
+        
+        .broken-border {
+            border: 2px dashed #ff0000;
+            position: relative;
+        }
+        
+        .broken-border::after {
+            content: "DEBT";
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: #111;
+            padding: 0 10px;
+            color: #ff0000;
+            font-size: 12px;
+        }
+        
+        .scrolling-ticker {
+            animation: ticker 30s linear infinite;
+            white-space: nowrap;
+        }
+        
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
 </head>
-	<header>
-		<meta charset="UTF-8">
-            	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        	<title>uncontained living</title>
-            	<link rel="stylesheet" href="styles.css">
-              	<div class="logo">uncontained living</div>
-	</header>
 <body>
-    <main>
-	<section1>
-	<center><h1>Return Who You Stole</h1></center>
-	    <BR>
-	<center><img src="avatar.jpg" alt="dotty - our mascot" style="width: 300px; height: 300px; margin: 20px"></center>
-	</section1>
-	<BR>
-	    <center><HR></center>
-<section2>
-	<center><h1>THE DECLARATION OF INDEPENDENCE<BR>
-	        IN CONgress [JULY 4, 1776] <BR>
-	        THE UNANIMOUS DECLARATION OF THE THIRTEEN UNITED STATES OF AMERICA<BR></h1></center>
-	<BR>
-	<BR>
-	<center><p>
-		The Declaration of Independence provides:<BR>
-		All Men are created Equal<BR>
-		We are endowed with unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness<BR>
-		That to secure these Rights, governments are instituted among Men, deriving their "just" powers from the 
-		CONsent of the governed, that whenever any "Form of Government" becomes destructive of these ends, it is the Right
-		of the people to alter or abolish it<BR>
-		But when a long train of abuses and usurpations, pursuing invariably the same "Object" evinces a design to reduce them
-		under absolute Despotism, it is their Right, it is their Duty, to throw off such government<BR>
-		<BR>
-		<h1>Then we can apply most, if not all, Facts submitted to this current "Form of Government" in United States, which has polluted the 
-		meanings of the words and terms to control, suppress, and manipulate, the "citizens and subjects".</h1>
-	</p></center>
-	<BR>
-	<BR>
-	<center><img src="OURCOMCOV.jpg" alt="OUR COMMUNITY COVER" style="width: 1000px; height: 800px; margin: 20px"></center>
-	<BR>
-	<center><img src="OURCOM1.jpg" alt="OUR COMMUNITY CH. 3" style="width: 1000px; height: 800px; margin: 20px"></center>
-	<BR>
-	<center><img src="OURCOM2.jpg" alt="OUR COMMUNITY CH.3-1" style="width: 1000px; height: 800px; margin: 20px"></center>
-	<BR>
-	<center><h1>OUR COMMUNITY (1920)</h1></center>
-	<center><HR></center>
-</section2>\
-	<BR>
-<section3>
-	<center><h1>The Constitution FOR the United States of America</h1></center><BR>
-	<BR>	    
-	<center><p>
-			    Artilce I.[1] Section VIII.[8]:<BR>
-		<BR>
-			    The Congress shall have power to lay and collect Taxes, Duties, Imposts, and Excises To pay the Debts 
-			    and provide for the common defence and general Welfare of the United States; but all Duties, Imposts,
-			    and Excises shall be uniform throughout the United States:-
-		<BR>
-			    	To borrow Money on the credit of the United States;
-		<BR>
-				To regulate Commerce with foreign Nations, and among the several States, and with the Indian Tribes;
-		<BR>
-				To establish a uniform Rule of Naturalization, and uniform Laws on the subject of Bankruptcies 
-			    	throughout the United States;
-		<BR>
-				To coin Money, regulate the Value thereof, and of foreign Coin, and fix the Standard of Weights and Measures;
-		<BR>
-			    	To provide for the Punishment of counterfeiting the Securities and current coin of the United States;
-		<BR>
-			    	To establish Post Offices and post Roads;
-		<BR>
-			    	To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the 
-			    	exclusive Right to their respective Writings and Discoveries;
-		<BR>
-				To constitute Tribunals inferior to the Supreme Court;
-		<BR>
-			    	To define and punish Piracies and Felonies committed on the high Seas, and Offences against the Law of Nations;
-		<BR>
-			    	To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and Water;
-		<BR>
-				To raise and support Armies, but no Appropriation of Money to that Use shall be for a longer Term than two Years;
-		<BR>
-			    	To provide and maintain a Navy;
-		<BR>
-			    	To make Rules for the Government and Regulation of the land and naval Forces;
-		<BR>
-				To provide for calling forth the Militia to execute the Laws of the Union, suppress Insurrections and repel Invasions;
-		<BR>
-				To provide for organizing, arming, and disciplining, the Militia, and for governing such Part of them as may be employed 
-			    	in the Service of the United States, reserving to the States respectively, the Appointment of the Officers, and the 
-			    	Authority of training the Militia according to the discipline prescribed by Congress;
-		<BR>
-			       	To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, 
-			    	by Cession of particular States, and the Acceptance of Congress, become the Seat of the Government of the United States, 
-			    	and to exercise like Authority over all Places purchased by the Consent of the Legislature of the State in which the Same 
-				shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings; —And
-		<BR>
-				To make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers, and all other 
-				Powers vested by this Constitution in the Government of the United States, or in any Department or Officer thereof.</p>
-			    <BR>
-			    <center><h1>
-				"The CONgress" shall have "Power" to lay and collect Taxes, Duties, Imposts, and Excises ONLY to:<BR> 
-				    1. Pay the Debts of the United States<BR>
-				    2. Provide for the common Defence of the United States<BR>
-				    3. Provide for the general Walfare of the United States<BR>
-				<BR>
-				However, in order for "The CONgress" to have "Power" to do the remaining, ALL Duties, Imposts, and Excises SHALL be Uniform 
-				throughout the United States.  
-			    </h1><BR>
-			    <h1>
-				First - How is it that a total of 535 persons have such broad "Power" over 300 million+ people?<BR>
-				Second - Where is a complete list of all the Duties, Imposts, and Excises, so We can "check" to make sure they are ALL Uniform?<BR>
-				Third - Why has "The CONgres" not been paying the Debts, yet continue to borrow money on the credit of the United States?<BR>
-				Fourth - If the federal government can "make a Thing but gold and silver tender in payment for Debts", why is there any Debts 
-				    to begin with?</h1><BR>
-			    <HR></center>
-			    <center><p>
-			    Article VI. [6]:<BR>
-				    <BR>
-			    All Debts contracted and Engagements entered into, before the Adoption of this Constitution, 
-			    shall be as valid against the United States under this Constitution, as under the Confederation.
-			    This Constitution, and the Laws of the United States which shall be made in Pursuance thereof;
-			    and all Treaties made, or which shall be made, under the Authority of the United States, shall be 
-			    the supreme Law of the Land; and the Judges in every State shall be bound thereby, any Thing in 
-			    the Constitution or Laws of any State to the Contrary notwithstanding.<BR>
-			    <BR>
-			    The Senators and Representatives before mentioned, and the Members of the several State Legislatures, 
-			    and all executive and judicial Officers, both of the United States and of the several States, shall be 
-			    bound by Oath or Affirmation, to support this Constitution; but no religious Test shall ever be 
-			    required as a Qualification to any Office or public Trust under the United States.<BR>
-			    </p></center>
-				    <center><HR></center>
-			    <BR>
-    </main>
-</body>
-	<foot>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>uncontained living</title>
-            <link rel="stylesheet" href="styles.css">
-        </foot>
-        <footer>
-		<nav class="nav-footer">
-              	<div class="logo">uncontained living</div>
-                <div class="nav-buttons">
-                   	<a href="privacy.html" class="nav-btn">privacy policy</a>
-                	<a href="contact.html" class="nav-btn">contact</a>
-                        <a href="terms.html" class="nav-btn">terms of use</a>
+    <!-- Warning Banner -->
+    <div class="bg-red-900 text-white py-2 px-4 text-center">
+        <marquee behavior="scroll" direction="left">
+            <i class="fas fa-exclamation-triangle mr-2"></i> WARNING: This is NOT financial advice. We actively encourage poor financial decisions. Join at your own risk. <i class="fas fa-skull ml-2"></i>
+        </marquee>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="bg-black py-4 px-6 border-b border-red-500">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-university text-red-500 text-2xl mr-2"></i>
+                <span class="title-font text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-500">
+                    UNCONTAINED LIVING DEBT UNION
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-red-400 hover:text-white">Debt Products</a>
+                <a href="#" class="text-red-400 hover:text-white">Debt Calculator</a>
+                <a href="#" class="text-red-400 hover:text-white">Debt Stories</a>
+                <a href="#" class="text-red-400 hover:text-white">Debt Support</a>
+            </div>
+            <button class="md:hidden text-red-400">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <div class="relative h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900 overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-0 w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><text x=\"10\" y=\"50\" font-family=\"monospace\" font-size=\"20\" fill=\"red\">$</text></svg>');"></div>
+        </div>
+        
+        <div class="text-center px-4 z-10">
+            <h1 class="glitch title-font text-5xl md:text-7xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500" data-text="EMBRACE THE DEBT">
+                EMBRACE THE DEBT
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Why save when you can spend? Join the revolution against financial responsibility. 
+                Our debt products are designed to keep you comfortably in the red.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-red-600 hover:bg-red-700 text-white py-3 px-8 rounded-full font-bold transition-all transform hover:scale-105">
+                    <i class="fas fa-hand-holding-usd mr-2"></i> Apply for Debt
+                </button>
+                <button class="border-2 border-red-600 text-red-400 hover:bg-red-900 hover:text-white py-3 px-8 rounded-full font-bold transition-all transform hover:scale-105">
+                    <i class="fas fa-question-circle mr-2"></i> How Deep Can You Go?
+                </button>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black to-transparent"></div>
+    </div>
+    
+    <!-- Debt Meter -->
+    <div class="bg-black py-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center text-red-400">
+                <i class="fas fa-chart-line-down mr-2"></i> OUR CURRENT DEBT LEVELS
+            </h2>
+            <div class="bg-gray-900 rounded-lg p-6">
+                <div class="flex justify-between mb-2">
+                    <span class="text-red-300">Minimum Debt</span>
+                    <span class="text-purple-300">Maximum Debt</span>
+                </div>
+                <div class="debt-meter rounded-full mb-4"></div>
+                <div class="text-center text-yellow-300">
+                    <i class="fas fa-exclamation-triangle mr-2"></i> Warning: Debt levels approaching critical mass
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Products Section -->
+    <div class="py-16 px-4 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center title-font text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500">
+                OUR DEBT PRODUCTS
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border-l-4 border-red-500 transform transition-all hover:scale-105 hover:shadow-lg hover:shadow-red-900/50">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-red-400">Bottomless Credit</h3>
+                            <span class="bg-red-900 text-white text-xs px-2 py-1 rounded">Most Popular</span>
+                        </div>
+                        <p class="text-gray-300 mb-6">
+                            A credit line with no limits (and no hope of repayment). Perfect for impulse buyers and serial spenders.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-red-300">
+                                <i class="fas fa-check-circle mr-2"></i> No credit checks
+                            </li>
+                            <li class="flex items-center text-red-300">
+                                <i class="fas fa-check-circle mr-2"></i> Interest compounds daily
+                            </li>
+                            <li class="flex items-center text-red-300">
+                                <i class="fas fa-check-circle mr-2"></i> Collections guaranteed
+                            </li>
+                        </ul>
+                        <button class="w-full bg-red-700 hover:bg-red-600 text-white py-3 rounded-lg font-bold">
+                            <i class="fas fa-arrow-circle-down mr-2"></i> Dive In
+                        </button>
                     </div>
-        	</nav>
-	</footer>
-</html>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border-l-4 border-purple-500 transform transition-all hover:scale-105 hover:shadow-lg hover:shadow-purple-900/50">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-purple-400">Reverse Savings</h3>
+                            <span class="bg-purple-900 text-white text-xs px-2 py-1 rounded">Innovative</span>
+                        </div>
+                        <p class="text-gray-300 mb-6">
+                            Instead of earning interest, you pay us to hold your money. The longer you leave it, the more you owe us!
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-purple-300">
+                                <i class="fas fa-check-circle mr-2"></i> Negative interest rates
+                            </li>
+                            <li class="flex items-center text-purple-300">
+                                <i class="fas fa-check-circle mr-2"></i> Monthly maintenance fees
+                            </li>
+                            <li class="flex items-center text-purple-300">
+                                <i class="fas fa-check-circle mr-2"></i> Early withdrawal penalties
+                            </li>
+                        </ul>
+                        <button class="w-full bg-purple-700 hover:bg-purple-600 text-white py-3 rounded-lg font-bold">
+                            <i class="fas fa-money-bill-wave mr-2"></i> Lose Money Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden border-l-4 border-yellow-500 transform transition-all hover:scale-105 hover:shadow-lg hover:shadow-yellow-900/50">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-yellow-400">Debt Consolidation</h3>
+                            <span class="bg-yellow-900 text-white text-xs px-2 py-1 rounded">Classic</span>
+                        </div>
+                        <p class="text-gray-300 mb-6">
+                            Combine all your debts into one massive, unmanageable loan. Out of sight, out of mind (until it's not).
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-yellow-300">
+                                <i class="fas fa-check-circle mr-2"></i> Higher interest than all your current debts
+                            </li>
+                            <li class="flex items-center text-yellow-300">
+                                <i class="fas fa-check-circle mr-2"></i> Extends repayment period indefinitely
+                            </li>
+                            <li class="flex items-center text-yellow-300">
+                                <i class="fas fa-check-circle mr-2"></i> Perfect for ignoring real problems
+                            </li>
+                        </ul>
+                        <button class="w-full bg-yellow-700 hover:bg-yellow-600 text-white py-3 rounded-lg font-bold">
+                            <i class="fas fa-layer-group mr-2"></i> Pile It On
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Testimonials -->
+    <div class="py-16 px-4 bg-black">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center title-font text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500">
+                DEBTOR TESTIMONIALS
+            </h2>
+            
+            <div class="space-y-8">
+                <!-- Testimonial 1 -->
+                <div class="broken-border p-6 bg-gray-900 rounded">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red-900 flex items-center justify-center mr-4">
+                            <i class="fas fa-user-secret text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-red-400">Former Millionaire</h4>
+                            <p class="text-sm text-gray-400">$2.3M in debt</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Thanks to the Uncontained Living Debt Union, I've successfully converted my entire fortune into 
+                        unsecured debt. The collection calls add excitement to my otherwise dull existence. 10/10 would bankrupt again!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="broken-border p-6 bg-gray-900 rounded">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-900 flex items-center justify-center mr-4">
+                            <i class="fas fa-graduation-cap text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-purple-400">Recent Graduate</h4>
+                            <p class="text-sm text-gray-400">$178K in student loans</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "I consolidated my student loans with ULDU and now owe three times as much! The best part? 
+                        They helped me take out additional credit to finance my 'finding myself' phase. No regrets!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="broken-border p-6 bg-gray-900 rounded">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-900 flex items-center justify-center mr-4">
+                            <i class="fas fa-umbrella-beach text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-yellow-400">Retired Early</h4>
+                            <p class="text-sm text-gray-400">$0 assets, $1.5M liabilities</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Why wait until retirement to enjoy life? I maxed out every credit line ULDU offered me and 
+                        now live on a beach in Bali. Sure, I can never return to my home country, but small price to pay!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Debt Calculator -->
+    <div class="py-16 px-4 bg-gradient-to-b from-gray-900 to-black">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center title-font text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
+                DEBT CALCULATOR
+            </h2>
+            <p class="text-center text-gray-400 mb-12">
+                Find out how much debt you can realistically accumulate before society completely gives up on you
+            </p>
+            
+            <div class="bg-gray-900 rounded-xl p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <label class="block text-red-400 mb-2">Current Debt</label>
+                        <div class="relative">
+                            <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
